@@ -44,7 +44,7 @@ resource "aws_security_group" "allow_web" {
   name        = "allow_web"
   description = "Allow Web inbound traffic"
   vpc_id      = aws_vpc.myvpc.id
-
+}
   ingress {
     description = "HTTPS"
     from_port   = 443
