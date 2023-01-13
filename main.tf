@@ -6,9 +6,6 @@ resource "aws_vpc" "dev-vpc" {
     cidr_block = var.vpc_cidr
     enable_dns_hostnames = true
 
-    tags = {
-      Name = var.inputname
-    }
 }
 
 resource "aws_instance" "dev-ec2" {
