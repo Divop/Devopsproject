@@ -4,7 +4,7 @@ Provider "aws" {
 
 resource "aws_instance" "Websever" {
 	ami = "0b5eea76982371e91"
-	instance type = "t2.micro"
+	instance_type = "t2.micro"
 }
 
 resource "aws_S3_bucket" "dino10bucket" {
