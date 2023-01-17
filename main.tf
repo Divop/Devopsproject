@@ -7,7 +7,7 @@ resource "aws_instance" "Websever1" {
 	instance_type = "t2.micro"	
 }
 
-resource "aws_S3_bucket" "dino10bucket" {
+resource "aws_s3_bucket" "dino10bucket" {
 	bucket = "dino0101"
 	acl = "private"
 }
